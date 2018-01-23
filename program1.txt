@@ -1,0 +1,19 @@
+function gcd(x,y)
+begin
+	while x<>y do
+		begin
+			if x<y then y:=y-x;
+			if y<x then x:=x-y;
+		end;
+	return x
+end;
+
+const bunsi=32,bunbo=88;
+var g;
+
+begin
+	g:=gcd(bunsi,bunbo);
+	write bunsi/g;
+	write bunbo/g;
+	writeln
+end.
